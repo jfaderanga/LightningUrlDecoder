@@ -1,0 +1,72 @@
+body {
+    font-family: 'markOT';
+}
+input, button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 219, 218);
+    border-radius: .25rem;
+    line-height: 1.875rem;
+    height: 1.875rem;
+}
+button {
+    background-clip: border-box;
+    color: rgba(162, 24, 39, 1);
+    text-decoration: none;
+    -webkit-appearance: none;
+    white-space: normal;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+input {
+    color: rgb(8, 7, 7);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(221, 219, 218);
+    border-radius: .25rem;
+    min-width: 300px;
+    transition: border .1s linear, background-color .1s linear;
+    display: inline-block;
+    padding: 0 1rem 0 .75rem;
+    
+}
+h1 {
+    font-size: 15px;
+    margin-top: 0;
+}
+.btns {
+    margin-top: 10px;
+    font-family: 'markOT';
+    position: relative;
+}
+.container {
+    min-width: 150px;
+    max-width: 350px;
+    padding: 10px;
+    border-radius: 3px;
+}
+.tooltip {
+    display: none;
+    position: absolute;
+    top: -19px;
+    right: -7px;
+    border: 1px solid rgb(221, 219, 218);
+    background-color: #fff8cb;
+    border-radius: 5px;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+}
+.tooltip::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-width: 0 1px 1px 0;
+    border-color: rgb(221, 219, 218);
+    border-style: solid;
+    transform: rotate(45deg);
+    bottom: -3px;
+    left: 8px;
+    background-color: #fff8cb;
+}

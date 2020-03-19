@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'markOT';
+    font-style: normal;
+    src: url('../assets/fonts/MarkOT.woff') format('woff'),
+    url('../assets/fonts/MarkOT.woff2') format('woff2');
+}

@@ -1,0 +1,26 @@
+{
+    "name": "Lightning URL Decoder  ",
+    "description": "A simple extensions that decode url to a readable string",
+    "manifest_version": 2,
+    "icons": {
+      "16": "assets/images/logos/icon16.png",
+      "48": "assets/images/logos/icon48.png",
+      "128": "assets/images/logos/icon148.png"
+    },
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": [
+          "https://*.lightning.force.com/*", "https://*.my.salesforce.com/*", "https://*.visual.force.com/*", "https://*.salesforce.com/*"
+        ],
+        "js": ["/js/content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html",
+      "default_icon": "assets/images/logos/icon.png"
+    },
+    "version": "1.0"
+  }
